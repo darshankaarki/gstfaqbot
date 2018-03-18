@@ -1,0 +1,102 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "entities": [],
+        "intent": "intro",
+        "text": "who are you?"
+      },
+      {
+        "entities": [],
+        "intent": "intro",
+        "text": "what do you do?"
+      },
+      {
+        "entities": [],
+        "intent": "intro",
+        "text": "what can you do for me?"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "text": "What is the status of my expense 123456",
+        "intent": "expense-status",
+        "entities": [
+          {
+            "start": 33,
+            "end": 39,
+            "value": "123456",
+            "entity": "expense-number"
+          }
+        ]
+      },
+      {
+        "text": "Status of expense number 123456",
+        "intent": "expense-status",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "123456",
+            "entity": "expense-number"
+          }
+        ]
+      },
+      {
+        "text": "Is the expense number 123456 paid ",
+        "intent": "expense-status",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "123456",
+            "entity": "expense-number"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "value": "paid",
+            "entity": "expense-paid"
+          }
+        ]
+      },
+      {
+        "text": "What is the total expense amount for 123456",
+        "intent": "expense-total",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "amount",
+            "entity": "expense-amount"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "value": "total",
+            "entity": "amount-type"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "value": "123456",
+            "entity": "expense-number"
+          }
+        ]
+      }
+    ]
+  }
+}
